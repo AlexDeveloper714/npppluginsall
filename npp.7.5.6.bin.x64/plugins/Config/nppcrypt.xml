@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nppcrypt_preferences version="1015">
+<files enabled="true" askonsave="true" extension="nppcrypt" />
+<crypt_basic cipher="rijndael256" mode="gcm" iv="random" />
+<crypt_encoding enc="base64" eol="windows" linebreaks="true" linelength="64" uppercase="true" />
+<crypt_key saltbytes="16" algorithm="scrypt" N="16384" r="8" p="1" />
+<crypt_hmac enabled="false" hash="sha3_256" keypreset_id="-1" />
+<hash algorithm="md5" encoding="base16" usekey="false" keypreset_id="-1" />
+<random mode="specials" length="16" />
+<convert source_enc="ascii" target_enc="base64" eol="windows" linelength="64" linebreaks="true" uppercase="true" />
+<key_presets>
+</key_presets>
+</nppcrypt_preferences>

@@ -1,0 +1,36 @@
+
+import java.util.Scanner;
+
+public class Main {
+
+    ordenamiento ordenar = new ordenamiento();
+
+    Scanner lectura = new Scanner(System.in);
+    int opcion;
+    int[] matriz;
+	
+    public static void main(String[] args) {
+        int tamaño = 0;
+		/* DIGITAR RUTA */
+        String ruta = "";
+		LecturaArchivos leer = new LecturaArchivos();
+        matriz=leer.leerVector(ruta);
+		/* VERSION PARCIAL DEL PROGRAMA */
+		leer.ordenarVector(matriz);
+		/* VERSION COMPLETA DEL PROGRAMA */
+        leer.ordenarVectorParcial(matriz);
+
+    }
+
+    public void hacerProcesos() {
+        ejerciciosOrdenamiento();
+    }
+
+    public String verMatriz(int[] matriz) {
+        String matrizCadena = "";
+        for (int i = 0; i < matriz.length; i++) {
+            matrizCadena += matriz[i] + " ";
+        }
+        return matrizCadena;
+    }
+}
